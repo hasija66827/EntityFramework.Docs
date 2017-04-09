@@ -41,9 +41,11 @@ namespace EFGetStarted.UWP
             {
                 var blog = new Blog { Url = NewBlogUrl.Text };
                 db.Blogs.Add(blog);
+                var cusomer = new Customer("rahul","9632166827");
+                db.Customers.Add(cusomer);
                 db.SaveChanges();
 
-                Blogs.ItemsSource = db.Blogs.ToList();
+                Blogs.ItemsSource = db.Customers.ToList();
             }
         }
     }

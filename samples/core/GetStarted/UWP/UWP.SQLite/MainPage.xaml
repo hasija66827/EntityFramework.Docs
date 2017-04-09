@@ -15,7 +15,7 @@
             <ListView Name="Blogs">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Url}" />
+                        <TextBlock Text="{Binding Name}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
